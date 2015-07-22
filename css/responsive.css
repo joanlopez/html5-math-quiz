@@ -1,0 +1,107 @@
+@media all and (max-width: 600px) {
+
+	#math-quiz-wrapper {
+			width: 65%;
+	}
+
+	#timer-wrapper {
+			width: 35%;
+			left: 65%;
+	}
+
+	#timer {
+  	font-size: x-large;
+	}
+
+	#counter-wrapper {
+			width: 35%;
+			left: 65%;
+	}
+
+	#counter {
+		font-size: x-large;
+	}
+
+	.answer-wrapper {
+		width: 70%;
+		left: 15%;	
+		font-size: x-large;
+		border: 3px solid black;
+		box-shadow: 5px 5px 2px #888888;
+	}
+
+}
+
+@media all and (max-height: 650px) {
+	#timer {
+  	font-size: x-large;
+	}
+
+	#timer p {
+		padding-bottom: 0;
+	}
+
+	#counter {
+		font-size: x-large;
+	}
+
+	#counter p {
+		padding-bottom: 0;
+	}
+}
+
+@media all and (max-height: 450px) {
+	#math-quiz {
+		height: 60%;
+		top: 20%;
+		font-size: x-large;
+	}
+
+	#timer {
+  	font-size: large;
+	}
+
+	#counter {
+		font-size: large;
+	}
+
+	.answer-wrapper {
+		width: 70%;
+		left: 15%;	
+		font-size: x-large;
+		border: 3px solid black;
+		box-shadow: 5px 5px 2px #888888;
+	}
+}
+
+@media all and (max-height: 350px) {
+	#timer {
+  	font-size: medium;
+	}
+
+	#counter {
+		font-size: medium;
+	}
+}
+
+@media all and (max-height: 300px) {
+	#math-quiz {
+		height: 80%;
+		top: 10%;
+		font-size: large;
+	}
+
+	#timer p {
+  	float: left;
+	}
+
+	#counter p {
+		float: left;
+	}
+}
+
+@media all and (max-height: 200px) {
+	#math-quiz p {
+  	float: left;
+	}
+}
