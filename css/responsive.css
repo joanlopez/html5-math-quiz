@@ -1,4 +1,4 @@
-@media all and (max-width: 600px) {
+@media all and (max-width: 650px) {
 
 	#math-quiz-wrapper {
 			width: 65%;
@@ -10,7 +10,7 @@
 	}
 
 	#timer {
-  	font-size: x-large;
+  		font-size: x-large;
 	}
 
 	#counter-wrapper {
@@ -28,7 +28,6 @@
 		top: calc((100% - 210px)/2);
 		left: calc((100% - 210px)/2);
 		border: 2px solid black;
-		font-size: xx-large;
 		box-shadow: 4px 5px 0px white;
 	}
 
@@ -39,7 +38,7 @@
 }
 
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 550px) {
 	.answer-wrapper {
 		width: 120px;
 		height: 120px;
@@ -48,6 +47,10 @@
 		border: 2px solid black;
 		font-size: x-large;
 		box-shadow: 4px 5px 0px white;
+	}
+
+	#math-quiz {
+		font-size: x-large;
 	}
 
 	.score {
@@ -59,101 +62,49 @@
 	}
 }
 
-@media all and (max-height: 650px) {
-	#timer {
-  	font-size: x-large;
-	}
-
-	#timer p {
-		padding-bottom: 0;
-	}
-
-	#counter {
-		font-size: x-large;
-	}
-
-	#counter p {
-		padding-bottom: 0;
-	}
-
-	.answer-wrapper {
-		width: 250px;
-		height: 250px;
-		top: calc((100% - 250px)/2);
-		left: calc((100% - 250px)/2);
-		border: 2px solid black;
-		font-size: xx-large;
-		box-shadow: 4px 5px 0px white;
-	}
-
-	.answer-wrapper:active {
-	  box-shadow: 2px 2px 0px white;	
-	}
-}
-
-@media all and (max-height: 450px) {
+@media all and (max-width: 450px) {
 	#math-quiz {
-		height: 60%;
-		top: 20%;
-		font-size: x-large;
-	}
-
-	#timer {
-  	font-size: large;
-	}
-
-	#counter {
 		font-size: large;
 	}
-
-	.answer-wrapper {
-		width: 175px;
-		height: 175px;
-		top: calc((100% - 175px)/2);
-		left: calc((100% - 175px)/2);
-		border: 1px solid black;
-		font-size: x-large;
-	}
-
 }
 
-@media all and (max-height: 350px) {
-	#timer {
-  	font-size: medium;
-	}
-
-	#counter {
+@media all and (max-width: 350px) {
+	#math-quiz {
 		font-size: medium;
 	}
 }
 
-@media all and (max-height: 300px) {
-	#math-quiz {
-		height: 80%;
-		top: 10%;
+@media all and (max-height: 550px) {
+	#counter {
 		font-size: large;
 	}
 
-	#timer p {
-  	float: left;
+	#timer {
+		font-size: large;
+	}
+}
+
+@media all and (max-height: 450px) {
+	#counter {
+		font-size: small;
 	}
 
+	#timer {
+		font-size: small;
+	}
+}
+
+@media all and (max-height: 300px) {
 	#counter p {
 		float: left;
 	}
 
-	.answer-wrapper {
-		width: 125px;
-		height: 125px;
-		top: calc((100% - 125px)/2);
-		left: calc((100% - 125px)/2);
+	#timer p {
+		float: left;
 	}
 
-}
-
-@media all and (max-height: 200px) {
 	#math-quiz p {
-  	float: left;
+		display: none;
 	}
 
 	.answer-wrapper {
@@ -161,5 +112,8 @@
 		height: 75px;
 		top: calc((100% - 75px)/2);
 		left: calc((100% - 75px)/2);
+		border: 2px solid black;
+		font-size: x-large;
+		box-shadow: 4px 5px 0px white;
 	}
 }

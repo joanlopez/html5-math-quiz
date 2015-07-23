@@ -67,7 +67,7 @@ html, body {
 	top: 20%;
 	left: 5%;
 	text-align: center;
-	font-size: xx-large;
+	font-size: x-large;
 }
 
 #timer p {
@@ -91,7 +91,7 @@ html, body {
 	left: 5%;
 	margin: auto;
 	text-align: center;
-	font-size: xx-large;
+	font-size: x-large;
 }
 
 #counter p {
@@ -121,7 +121,6 @@ html, body {
 	height: 30%;
 	top: 0;
 	left: 0;
-
 }
 
 .score {
@@ -157,10 +156,10 @@ html, body {
 
 .answer-wrapper {
 	position: absolute;
-	width: 350px;
-	height: 350px;
-	top: calc((100% - 350px)/2);
-	left: calc((100% - 350px)/2);
+	width: 275px;
+	height: 275px;
+	top: calc((100% - 275px)/2);
+	left: calc((100% - 275px)/2);
 	text-align: center;
 	font-size: xx-large;
 	font-weight: bolder;
