@@ -116,24 +116,25 @@ html, body {
 
 .answer-wrapper {
 	position: absolute;
-	height: 60%;
-	width: 80%;
-	top: 20%;
-	left: 10%;	
+	width: 350px;
+	height: 350px;
+	top: calc((100% - 350px)/2);
+	left: calc((100% - 350px)/2);
 	text-align: center;
 	font-size: xx-large;
 	font-weight: bolder;
-	border: 6px solid white;
-	border-radius: 40px;
-	box-shadow: 10px 10px 5px #888888;
-	background: #100000;
+	border: 2px solid black;
+	border-radius: 200px;
+	box-shadow: 4px 10px 0px white;
+	background: red;
 }
 
 .answer-wrapper:active {
 	-webkit-transform: translate(0, 4px);
   -moz-transform: translate(0, 4px);
   -o-transform: translate(0, 4px);
-  transform: translate(0, 4px);	
+  transform: translate(0, 4px);
+  box-shadow: 2px 5px 0px white;	
 }
 
 .answer {

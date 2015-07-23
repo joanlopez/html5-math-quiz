@@ -23,14 +23,48 @@
 	}
 
 	.answer-wrapper {
-		width: 70%;
-		left: 15%;	
-		font-size: x-large;
-		border: 3px solid white;
-		box-shadow: 5px 5px 2px #888888;
+		width: 210px;
+		height: 210px;
+		top: calc((100% - 210px)/2);
+		left: calc((100% - 210px)/2);
+		border: 2px solid black;
+		font-size: xx-large;
+		box-shadow: 4px 5px 0px white;
+	}
+
+	.answer-wrapper:active {
+	  box-shadow: 2px 2px 0px white;	
 	}
 
 }
+
+
+@media all and (max-width: 500px) {
+	.answer-wrapper {
+		width: 120px;
+		height: 120px;
+		top: calc((100% - 130px)/2);
+		left: calc((100% - 130px)/2);
+		border: 2px solid black;
+		font-size: x-large;
+		box-shadow: 4px 5px 0px white;
+	}
+
+}
+
+@media all and (max-width: 500px) {
+	.answer-wrapper {
+		width: 120px;
+		height: 120px;
+		top: calc((100% - 130px)/2);
+		left: calc((100% - 130px)/2);
+		border: 2px solid black;
+		font-size: x-large;
+		box-shadow: 4px 5px 0px white;
+	}
+
+}
+
 
 @media all and (max-height: 650px) {
 	#timer {
@@ -47,6 +81,20 @@
 
 	#counter p {
 		padding-bottom: 0;
+	}
+
+	.answer-wrapper {
+		width: 250px;
+		height: 250px;
+		top: calc((100% - 250px)/2);
+		left: calc((100% - 250px)/2);
+		border: 2px solid black;
+		font-size: xx-large;
+		box-shadow: 4px 5px 0px white;
+	}
+
+	.answer-wrapper:active {
+	  box-shadow: 2px 2px 0px white;	
 	}
 }
 
@@ -66,12 +114,14 @@
 	}
 
 	.answer-wrapper {
-		width: 70%;
-		left: 15%;	
+		width: 175px;
+		height: 175px;
+		top: calc((100% - 175px)/2);
+		left: calc((100% - 175px)/2);
+		border: 1px solid black;
 		font-size: x-large;
-		border: 3px solid white;
-		box-shadow: 5px 5px 2px #888888;
 	}
+
 }
 
 @media all and (max-height: 350px) {
@@ -98,10 +148,25 @@
 	#counter p {
 		float: left;
 	}
+
+	.answer-wrapper {
+		width: 125px;
+		height: 125px;
+		top: calc((100% - 125px)/2);
+		left: calc((100% - 125px)/2);
+	}
+
 }
 
 @media all and (max-height: 200px) {
 	#math-quiz p {
   	float: left;
+	}
+
+	.answer-wrapper {
+		width: 75px;
+		height: 75px;
+		top: calc((100% - 75px)/2);
+		left: calc((100% - 75px)/2);
 	}
 }
