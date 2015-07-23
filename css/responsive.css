@@ -50,21 +50,14 @@
 		box-shadow: 4px 5px 0px white;
 	}
 
-}
-
-@media all and (max-width: 500px) {
-	.answer-wrapper {
-		width: 120px;
-		height: 120px;
-		top: calc((100% - 130px)/2);
-		left: calc((100% - 130px)/2);
-		border: 2px solid black;
+	.score {
 		font-size: x-large;
-		box-shadow: 4px 5px 0px white;
 	}
 
+	.maintext {
+		font-size: 2.5em;
+	}
 }
-
 
 @media all and (max-height: 650px) {
 	#timer {

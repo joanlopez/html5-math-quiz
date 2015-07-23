@@ -5,17 +5,25 @@ var timer;
 var counter;
 var actualExpression;
 var actualValue;
+var bestScore;
 
 $(document).ready(function() {
 	initApp();
 });
 
 function initApp() {
-	initGame();
+	bestScore = window.localStorage.getItem ('math-quiz-bestScore') || 0;
+	initMenuHandlers();
+	initGameHandlers();
+	initMenu();
+}
+
+function initMenu() {
+	renderBestScore();
+	showMenu();
 }
 
 function initGame() {
-	initGameHandlers();
 	showGame();
 	setEnvironment();	
 	startTimer();
@@ -74,6 +82,7 @@ function updateTimer() {
 	timer--;
 	if(timer <= 0) {
 		clearInterval(interval);
+		handleTimeout();
 	}
 	renderTimer();
 }
@@ -98,6 +107,7 @@ function renderExpression() {
 
 function showMenu() {
 	$("#game-container").addClass("hidden");
+	$("#end-container").addClass("hidden");
 	if($("#menu-container").hasClass("hidden")) {
 		$("#menu-container").removeClass("hidden");
 	}
@@ -105,21 +115,27 @@ function showMenu() {
 
 function showGame() {
 	$("#menu-container").addClass("hidden");
+	$("#end-container").addClass("hidden");
 	if($("#game-container").hasClass("hidden")) {
 		$("#game-container").removeClass("hidden");
 	}
 }
 
+function showEnd() {
+	$("#menu-container").addClass("hidden");
+	$("#game-container").addClass("hidden");
+	if($("#end-container").hasClass("hidden")) {
+		$("#end-container").removeClass("hidden");
+	}
+}
+
 function initGameHandlers() {
-	// Handling mouse platforms
 	$("#a-wrapper").on('vmouseup', handleA);
 	$("#b-wrapper").on('vmouseup', handleB);
 }
 
-function endGameHandlers() {
-	// Unbinding mouse platforms
-	$("#a-wrapper").off('vmouseup');
-	$("#b-wrapper").off('vmouseup');
+function initMenuHandlers() {
+	$("#playbutton").on('vmouseup', initGame);
 }
 
 function handleA() {
@@ -132,5 +148,23 @@ function handleB() {
 	if(actualValue == actualB) updateCounter(8);
 	else updateCounter(-7);	
 	newExpression();
+}
+
+function handleTimeout() {
+	renderActualScore();
+	if(counter > bestScore) {
+		bestScore = counter;
+		window.localStorage.setItem ('math-quiz-bestScore', bestScore);
+	}
+	showEnd();
+	setTimeout(initMenu, 4000);
+}
+
+function renderActualScore() {
+	$("#actualscore").html("<span>PUNTUACION:</span> " + counter);
+}
+
+function renderBestScore() {
+	$("#bestscore").html("<span>MEJOR PUNTUACION:</span> " + bestScore);
 }
 
