@@ -82,6 +82,20 @@
 	#timer {
 		font-size: large;
 	}
+
+	#math-quiz {
+		font-size: x-large;
+	}
+
+	.answer-wrapper {
+		width: 175px;
+		height: 175px;
+		top: calc((100% - 175px)/2);
+		left: calc((100% - 175px)/2);
+		border: 2px solid black;
+		font-size: x-large;
+		box-shadow: 4px 5px 0px white;
+	}
 }
 
 @media all and (max-height: 450px) {
